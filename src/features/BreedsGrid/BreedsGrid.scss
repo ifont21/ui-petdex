@@ -1,0 +1,34 @@
+.breeds-grid {
+  .MuiSvgIcon-root {
+    font-size: 2.5rem;
+
+    &.completed {
+      color: green;
+    }
+
+    &.not-completed {
+      color: red;
+    }
+  }
+
+  .MuiTableCell-body {
+    font-size: 1.2rem;
+
+    &.countFilled,
+    &.countNotFilled {
+      font-weight: 700;
+    }
+  }
+
+  .MuiTableCell-head {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  &__icon-edit {
+    &.MuiSvgIcon-root {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}

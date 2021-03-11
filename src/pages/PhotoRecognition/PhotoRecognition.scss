@@ -1,0 +1,25 @@
+.photo-recognition {
+  display: flex;
+  justify-content: center;
+
+  &__upload {
+    flex: 2;
+    background-color: white;
+    flex: 0 1 30%;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+
+  &__action {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__find-more {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,17 @@
+.image-preview {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 30rem;
+  box-shadow: 0px 0px 10px grey;
+  min-height: 36rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+}

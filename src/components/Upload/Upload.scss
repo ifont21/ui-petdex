@@ -1,0 +1,49 @@
+.upload {
+  display: flex;
+  align-items: center;
+
+  .MuiSvgIcon-root {
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 2px;
+  }
+
+  input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    & + label {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 0.8rem 1.5rem;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: all 0.2s;
+
+      & > *:first-child {
+        margin-right: 1rem;
+      }
+    }
+
+    &:focus + label {
+      * {
+        pointer-events: none;
+      }
+
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    &:hover + label {
+      background-color: red;
+    }
+  }
+}

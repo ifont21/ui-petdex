@@ -1,0 +1,10 @@
+.app {
+  min-height: 100vh;
+  background-color: #2ab3c6;
+  display: grid;
+  grid-template-rows: 7rem auto;
+
+  &__page {
+    padding: 4rem;
+  }
+}

@@ -1,0 +1,17 @@
+.upload-picture {
+  &__wrapper {
+    flex: 2;
+    background-color: white;
+    flex: 0 1 30%;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    height: fit-content;
+  }
+
+  &__action {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

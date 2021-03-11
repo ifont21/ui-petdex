@@ -1,0 +1,42 @@
+.breed-details {
+  width: 50%;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  background-color: white;
+  border-radius: 5px;
+  max-height: calc(100vh - 150px);
+  overflow: auto;
+
+  &__wrapper {
+    display: grid;
+    grid-template-areas:
+      "picture main"
+      "moreinfo moreinfo";
+    gap: 2rem;
+  }
+
+  &__name {
+    font-size: 4rem;
+    padding: 0 0 2rem 0;
+  }
+
+  &__picture {
+    grid-area: picture;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__main {
+    grid-area: main;
+    text-align: justify;
+  }
+
+  &__more-info {
+    grid-area: moreinfo;
+    text-align: justify;
+  }
+}

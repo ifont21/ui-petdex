@@ -1,0 +1,63 @@
+.admin {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 86rem;
+
+  &__wrapper {
+    background-color: white;
+    height: calc(100vh - 150px);
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+
+    .MuiSvgIcon-root {
+      font-size: 2.5rem;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      & > * {
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+
+      & > li {
+        list-style: none;
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        a {
+          border: 2px solid transparent;
+          color: #1cabbf;
+          display: flex;
+          align-self: center;
+          padding: 1rem;
+          border-radius: 5px;
+          transition: all 0.2s;
+
+          &:hover {
+            border: 2px solid;
+          }
+
+          span {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__page {
+    overflow: auto;
+  }
+}
