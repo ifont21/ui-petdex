@@ -33,7 +33,10 @@ const PhotoRecognitionProvider = ({ children }: { [key: string]: any }) => {
   ) => {
     setLoading(true);
     axios
-      .post("http://localhost:8080/api/upload", data)
+      .post(
+        "http://ec2-18-205-161-174.compute-1.amazonaws.com:8080/api/upload",
+        data
+      )
       .then((response) => {
         const data = response.data;
         const { image, key, _id } = data;

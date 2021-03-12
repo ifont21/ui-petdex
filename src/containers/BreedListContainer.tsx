@@ -7,7 +7,7 @@ const BreedListContainer = (Component: any) => {
 
     useEffect(() => {
       axios
-        .get(`http://localhost:8080/api/pets`)
+        .get(`http://ec2-18-205-161-174.compute-1.amazonaws.com:8080/api/pets`)
         .then((response: any) => {
           const breeds = response.data;
           setBreeds(breeds);

@@ -8,7 +8,10 @@ export function updateBreedApi(
   handleError: (err: any) => void
 ): void {
   axios
-    .put(`http://localhost:8080/api/pets/${id}`, payload)
+    .put(
+      `http://ec2-18-205-161-174.compute-1.amazonaws.com:8080/api/pets/${id}`,
+      payload
+    )
     .then((response: any) => {
       handleSuccess();
     })

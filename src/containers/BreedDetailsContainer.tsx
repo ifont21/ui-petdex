@@ -9,7 +9,9 @@ const BreedDetailsContainer = (Component: any) => {
 
     useEffect(() => {
       axios
-        .get(`http://localhost:8080/api/pets/${id}`)
+        .get(
+          `http://ec2-18-205-161-174.compute-1.amazonaws.com:8080/api/pets/${id}`
+        )
         .then((response: any) => {
           const breed = response.data;
           setBreed(breed);
